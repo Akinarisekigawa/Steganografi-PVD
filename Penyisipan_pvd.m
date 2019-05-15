@@ -2,10 +2,7 @@ clc;
 clear all;
 close all;
 %masukkan pesan rahasia
-%pesan = input('Masukkan pesan [Maksimal 20 karakter] : ','s');
 pesan = fileread('test.txt');
-%jika panjang pesan > 20 maka yang diambil hanya 20 karakter saja
-%if length(pesan) > 20, pesan = pesan(1:20), end;
 %pesan teks dijadikan angka
 pesan = uint8(pesan);
 %hitung panjang pesan
